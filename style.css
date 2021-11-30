@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+}
+
+.box{
+    height: 100vh;
+    width: 100%;
+    margin: 10px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+
+    /*sostituire con gli elem commentati dopo*/
+
+    text-align: center;
+    vertical-align: middle;
+}
+
+.layover{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+
+h2{
+    
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 700;
+    
+    
+}
+/*altro modo per posizionare al centro senza text align nella box
+h2{
+    position: absolute;
+    width: 50%;
+    hieght:50%;
+    OPPURE
+    position: absolute;
+    transform:translate(-50%, -50%) usare i numeri negativi per centrare perfettamente
+    
+    
+}
+
+per posizionare meglio usare transform con le coordinate
+
+*/
+
+
+
+
+#scarpe-red{
+    background-image: url(/01.png);
+    background-color: red;
+    color: yellow;
+    
+}
+
+#scarpe-red img , #scarpe-green img , #scarpe-green img{
+    width: 400px;
+    height: 300px;
+    transform:translate(-50%, -50%);
+}
+
+#scarpe-green{
+    background-image: url(/02.png);
+    background-color: green;
+    color:yellow ;
+}
+
+#scarpe-yellow{
+    background-image: url(/03.png);
+    background-color: yellow;
+    color: green;
+}
