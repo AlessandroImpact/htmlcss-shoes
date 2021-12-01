@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
 .container{
     width: 100%;
     margin: auto;
@@ -13,15 +17,8 @@
     height: 100vh;
     width: 100%;
     margin: 10px 0;
-    background-position: center;
-    background-repeat: no-repeat;
     cursor: pointer;
 
-
-    /*sostituire con gli elem commentati dopo*/
-
-    text-align: center;
-    vertical-align: middle;
 }
 
 .layover{
@@ -31,12 +28,19 @@
     background-color: rgba(0, 0, 0, 0.2)
 }
 
+.blocco{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
 
-h2{
-    
+.box h2{
+    text-align: center;
     text-transform: uppercase;
     font-size: 50px;
-    font-weight: 700;
     
     
 }
@@ -60,26 +64,23 @@ per posizionare meglio usare transform con le coordinate
 
 
 #scarpe-red{
-    background-image: url(/01.png);
     background-color: red;
     color: yellow;
     
 }
 
-#scarpe-red img , #scarpe-green img , #scarpe-green img{
-    width: 400px;
-    height: 300px;
-    transform:translate(-50%, -50%);
+.blocco #scarpe-red img , #scarpe-green img , #scarpe-green img{
+    width: 100%;
+
 }
 
 #scarpe-green{
-    background-image: url(/02.png);
     background-color: green;
     color:yellow ;
 }
 
 #scarpe-yellow{
-    background-image: url(/03.png);
     background-color: yellow;
     color: green;
 }
+
